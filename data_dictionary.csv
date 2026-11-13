@@ -1,0 +1,19 @@
+,original_name,description,dtype,missing,n_unique,pct_unique,min,max
+tract,tract,Census tract ID (11 digits: state + county + tract),str,0,756,100.0,,
+name,Name,Neighborhood or place name of the tract,str,0,189,25.0,,
+state,(created in this notebook),"State the tract is in (DC, MD or VA)",str,0,3,0.4,,
+county,(created in this notebook),County or independent city the tract is in,str,0,9,1.2,,
+income_age35,Household_Income_at_Age_35_rP_gP_p25,TARGET: average household income at age 35 ($) for children whose parents were at the 25th income percentile,float64,4,741,98.0,19515.0,69199.0
+median_rent,Median_Rent_2012-16,"Median gross rent ($/month), 2012-16",float64,15,609,80.6,241.0,3501.0
+job_growth,Job_Growth_Rate_from_2004_to_2013,"Annual job growth rate, 2004-2013",float64,179,507,67.1,-0.2389,0.3877
+median_hh_income_2016,Median_Hhold._Income_of_Residents_in_2012-16,"Median household income of residents ($), 2012-16",float64,3,736,97.4,14509.0,246886.0
+median_hh_income_1990,Median_Hhold._Income_of_Residents_in_1990,"Median household income of residents ($), 1990",int64,0,637,84.3,11176.0,272105.0
+poverty_rate,Poverty_Rate_in_2012-16,"Share of residents below the poverty line, 2012-16",float64,0,634,83.9,0.0,0.6952
+frac_college_grad,Fraction_College_Graduates_in_2012-16,"Share of adults with a college degree, 2012-16",float64,0,725,95.9,0.0149,1.0
+frac_nonwhite,Fraction_Non-White_in_2010,"Share of residents who are non-white, 2010",float64,0,711,94.0,0.0675,0.9975
+frac_foreign_born,Foreign-Born_Share_in_2012-16,"Share of residents born outside the U.S., 2012-16",float64,0,706,93.4,0.0,0.7112
+frac_single_parents,Fraction_Single_Parents_in_2012-16,"Share of households with children headed by a single parent, 2012-16",float64,3,689,91.1,0.0,1.0
+pop_density,Population_Density_in_2010,"Residents per square mile, 2010",float64,0,744,98.4,12.98,66900.0
+job_density,Density_of_Jobs_in_2013,"Jobs per square mile, 2013",float64,0,735,97.2,0.0,244096.0
+frac_short_commute,Fraction_with_Short_Work_Commutes_in_2012-16,"Share of workers with a commute under 15 minutes, 2012-16",float64,0,624,82.5,0.0,1.0
+census_response_rate,Census_Response_Rate_Social_Capital_Proxy,"Census mail-in response rate (%), a proxy for social capital",float64,0,256,33.9,49.0,100.0
