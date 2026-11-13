@@ -1,0 +1,30 @@
+FINAL MODEL METRICS
+Project: Where You Grow Up Matters: Predicting Adult Income for Low-Income Children in the DC Region
+
+Model: Linear Regression (scikit-learn LinearRegression, ordinary least squares)
+Parameters: fit_intercept=True, positive=False
+Hyperparameters: none to tune. Ridge and Lasso penalties were tuned with 5-fold CV and gave no improvement.
+Model selection: one-standard-error rule on 5-fold cross-validated RMSE (training set only)
+
+Target: income_age35 (household income at age 35, $, children of 25th-percentile parents)
+Training tracts: 601   Test tracts: 151
+Features (11): median_rent, median_hh_income_1990, poverty_rate, frac_nonwhite, frac_foreign_born, frac_single_parents, log_pop_density, frac_short_commute, census_response_rate, state_MD, state_VA
+
+Cross-validation (5-fold, training set):
+  RMSE $5,344 (std $719)   MAE $3,934   R2 0.690
+Test set:
+  RMSE $4,914   MAE $3,485   R2 0.753
+
+Intercept: 34,214.91
+Coefficients ($ per 1 SD for numeric features; $ vs. DC for state dummies):
+  median_rent: 807.00
+  median_hh_income_1990: 2,098.46
+  poverty_rate: 731.38
+  frac_nonwhite: -3,037.97
+  frac_foreign_born: 3,422.41
+  frac_single_parents: -87.53
+  log_pop_density: -820.25
+  frac_short_commute: -217.43
+  census_response_rate: 1,552.44
+  state_MD: 1,672.62
+  state_VA: 5,624.14
